@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Blog - Zhongzhi Li (李忠智)</title>
+  <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+  <div class="container">
+    <p class="name" style="margin-top: 20px;"><a href="index.html">Zhongzhi Li (李忠智)</a></p>
+    <p class="links" style="margin-top: 8px;">
+      <a href="index.html">Home</a> &nbsp;/&nbsp;
+      <a href="blog.html">Blog</a>
+    </p>
+
+    <h2>Blog</h2>
+    <p class="section-intro">Here are some notes and posts.</p>
+    <ul class="news-list blog-list">
+      <li>[2026-02-24] <a href="blog/example-post.html">Example: Getting Started with Research</a></li>
+    </ul>
+
+    <footer>
+      <p>Site last updated on <span id="site-updated"></span>.</p>
+      <p><a href="index.html">Back to Home</a></p>
+    </footer>
+  </div>
+  <script>
+    (function() {
+      var d = new Date();
+      var s = d.getFullYear() + '-' + String(d.getMonth() + 1).padStart(2, '0') + '-' + String(d.getDate()).padStart(2, '0');
+      var el = document.getElementById('site-updated');
+      if (el) el.textContent = s;
+    })();
+  </script>
+</body>
+</html>
