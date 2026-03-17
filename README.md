@@ -1,18 +1,7 @@
-# Zhongzhi Li - Academic Homepage
+# Zhongzhi Li (李忠智)
 
-Static single-page site (Jon Barron / Yandong Ji / Tianxing Wu style). Deploy the contents to your GitHub Pages repo (e.g. zhongzhili.github.io).
+I'm a Ph.D. student in the [School of Computing](https://computing.uga.edu/) at the University of Georgia, advised by [Dr. Ninghao Liu](https://ninghaohello.github.io/). I received my M.S. from Fudan University.
 
-## Before publishing
+I'm interested in the interpretability, controllability, and trustworthiness of AI systems, with a focus on foundation models and safety-critical applications.
 
-1. **Profile photo**: Add your photo as `images/me.jpg` (160×160 or square recommended).
-2. **Resume**: Add `data/resume.pdf` if you use the Resume link.
-3. **Links in `index.html`**: Replace `your.email@example.com`, `YOUR_ID` in the Google Scholar URL, and any other placeholders.
-4. **Publications**: Replace the placeholder text under "Publications" with real paper entries (title, authors, venue, links, description). Use the commented HTML example in `index.html` for each paper; add thumbnails to `images/` if desired.
-
-## Local preview
-
-Open `index.html` in a browser, or use a local server (e.g. `python -m http.server 8000` in this directory).
-
-## Deploy to GitHub Pages
-
-Push this folder's contents to the default branch of your `zhongzhili.github.io` repository. If the repo previously used Hugo, switch to publishing this static folder (or remove Hugo config).
+**Personal site:** [zhongzhili.github.io](https://zhongzhi660.github.io/personal_website/) (or wherever you host it)
