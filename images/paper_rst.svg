@@ -1,0 +1,139 @@
+<svg viewBox="0 0 1200 576" xmlns="http://www.w3.org/2000/svg" font-family="Arial, Helvetica, sans-serif">
+  <defs>
+    <marker id="aSlate" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#94A3B8"/>
+    </marker>
+    <marker id="aYellow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#5B7C99"/>
+    </marker>
+    <marker id="aBlue" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#6B93C7"/>
+    </marker>
+    <marker id="aCoral" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#E2726B"/>
+    </marker>
+  </defs>
+
+  <rect width="1200" height="576" fill="#FFFFFF"/>
+
+  <!-- ============ feedback loop (behind) ============ -->
+  <path d="M 1035,330 L 1035,555 L 165,555 L 165,336" fill="none" stroke="#5B7C99"
+        stroke-width="2" stroke-dasharray="7,6" marker-end="url(#aYellow)"/>
+  <rect x="452" y="543" width="296" height="26" fill="#FFFFFF"/>
+  <text x="600" y="561" fill="#5B7C99" font-size="16.5" font-weight="700" text-anchor="middle">A diverse subset reseeds next round</text>
+
+  <!-- ============ STAGE 1 : Seed Task ============ -->
+  <rect x="40" y="60" width="250" height="270" rx="16" fill="none" stroke="#CBD5E1" stroke-width="2"/>
+  <text x="165" y="98" fill="#1E293B" font-size="21" font-weight="800" text-anchor="middle">Seed Task</text>
+  <text x="165" y="121" fill="#94A3B8" font-size="14" text-anchor="middle">verified seed task</text>
+
+  <rect x="66" y="140" width="198" height="160" rx="10" fill="none" stroke="#E2E8F0" stroke-width="1.5"/>
+  <g fill="#475569" font-size="14">
+    <circle cx="88" cy="167" r="3" fill="#94A3B8"/><text x="102" y="171">instruction.md</text>
+    <circle cx="88" cy="197" r="3" fill="#94A3B8"/><text x="102" y="201">task.toml</text>
+    <circle cx="88" cy="227" r="3" fill="#94A3B8"/><text x="102" y="231">solution/solve.sh</text>
+    <circle cx="88" cy="257" r="3" fill="#94A3B8"/><text x="102" y="261">tests/ (private verifier)</text>
+    <circle cx="88" cy="287" r="3" fill="#94A3B8"/><text x="102" y="291">environment/Dockerfile</text>
+  </g>
+
+  <line x1="292" y1="195" x2="324" y2="195" stroke="#94A3B8" stroke-width="2.5" marker-end="url(#aSlate)"/>
+
+  <!-- ============ STAGE 2 : Rewrite ============ -->
+  <rect x="330" y="60" width="250" height="270" rx="16" fill="none" stroke="#CBD5E1" stroke-width="2"/>
+  <text x="455" y="98" fill="#1E293B" font-size="21" font-weight="800" text-anchor="middle">Plan &amp; Rewrite</text>
+  <text x="455" y="121" fill="#94A3B8" font-size="14" text-anchor="middle">make the task harder</text>
+
+  <circle cx="360" cy="152" r="11" fill="#5B7C99"/>
+  <text x="360" y="156" fill="#FFFFFF" font-size="12.5" font-weight="700" text-anchor="middle">1</text>
+  <text x="380" y="150" fill="#334155" font-size="15.5" font-weight="700">Pick a rewrite target</text>
+  <text x="380" y="169" fill="#94A3B8" font-size="13">longer horizon · more state deps</text>
+
+  <circle cx="360" cy="203" r="11" fill="#5B7C99"/>
+  <text x="360" y="207" fill="#FFFFFF" font-size="12.5" font-weight="700" text-anchor="middle">2</text>
+  <text x="380" y="207" fill="#334155" font-size="15.5" font-weight="700">Extend the solution path</text>
+
+  <circle cx="360" cy="245" r="11" fill="#5B7C99"/>
+  <text x="360" y="249" fill="#FFFFFF" font-size="12.5" font-weight="700" text-anchor="middle">3</text>
+  <text x="380" y="249" fill="#334155" font-size="15.5" font-weight="700">Add stricter assertions</text>
+
+  <circle cx="360" cy="287" r="11" fill="#5B7C99"/>
+  <text x="360" y="291" fill="#FFFFFF" font-size="12.5" font-weight="700" text-anchor="middle">4</text>
+  <text x="380" y="291" fill="#334155" font-size="15.5" font-weight="700">Update instruction &amp; env</text>
+
+  <line x1="582" y1="195" x2="614" y2="195" stroke="#94A3B8" stroke-width="2.5" marker-end="url(#aSlate)"/>
+
+  <!-- ============ STAGE 3 : Validate ============ -->
+  <rect x="620" y="60" width="250" height="270" rx="16" fill="none" stroke="#CBD5E1" stroke-width="2"/>
+  <text x="745" y="98" fill="#1E293B" font-size="21" font-weight="800" text-anchor="middle">Validate</text>
+  <text x="745" y="121" fill="#94A3B8" font-size="14" text-anchor="middle">filter invalid samples</text>
+
+  <text x="646" y="152" fill="#5B7C99" font-size="13" font-weight="700">PHASE 1 · LOCAL</text>
+  <text x="646" y="173" fill="#334155" font-size="15.5" font-weight="700">Quality &amp; structure check</text>
+  <text x="646" y="192" fill="#94A3B8" font-size="13">drop superficial or malformed rewrites</text>
+
+  <line x1="646" y1="207" x2="844" y2="207" stroke="#E2E8F0" stroke-width="1.5"/>
+
+  <text x="646" y="230" fill="#5B7C99" font-size="13" font-weight="700">PHASE 2 · SANDBOX</text>
+  <text x="646" y="251" fill="#334155" font-size="15.5" font-weight="700">Run solution vs. verifier</text>
+  <text x="646" y="270" fill="#94A3B8" font-size="13">the task must actually be solvable</text>
+
+  <rect x="646" y="284" width="198" height="30" rx="15" fill="none" stroke="#CBD5E1" stroke-width="1.5" stroke-dasharray="5,4"/>
+  <text x="745" y="303" fill="#64748B" font-size="13" font-weight="700" text-anchor="middle">fails → repair from logs, retry</text>
+
+  <line x1="872" y1="195" x2="904" y2="195" stroke="#94A3B8" stroke-width="2.5" marker-end="url(#aSlate)"/>
+
+  <!-- ============ STAGE 4 : Accepted ============ -->
+  <rect x="910" y="60" width="250" height="270" rx="16" fill="none" stroke="#CBD5E1" stroke-width="2"/>
+  <text x="1035" y="98" fill="#1E293B" font-size="21" font-weight="800" text-anchor="middle">Accepted Task</text>
+  <text x="1035" y="121" fill="#94A3B8" font-size="14" text-anchor="middle">harder, and provably solvable</text>
+
+  <circle cx="1035" cy="180" r="30" fill="none" stroke="#5B7C99" stroke-width="3"/>
+  <path d="M1021,180 L1031,190 L1050,169" fill="none" stroke="#5B7C99" stroke-width="4"
+        stroke-linecap="round" stroke-linejoin="round"/>
+
+  <g fill="#475569" font-size="14.5" text-anchor="middle">
+    <text x="1035" y="242">same file layout as the seed</text>
+    <text x="1035" y="266">verified end-to-end in sandbox</text>
+    <text x="1035" y="290">+ provenance.json</text>
+  </g>
+
+  <!-- ============ hardening tasks ============ -->
+  <rect x="210" y="370" width="780" height="140" rx="16" fill="none" stroke="#E2E8F0" stroke-width="2"/>
+  <rect x="242" y="359" width="142" height="22" fill="#FFFFFF"/>
+  <text x="248" y="377" fill="#94A3B8" font-size="16" font-weight="700">Hardening tasks</text>
+
+  <text x="380" y="410" fill="#1E293B" font-size="16" font-weight="700" text-anchor="middle">Before — seed</text>
+  <g>
+    <line x1="320" y1="443" x2="440" y2="443" stroke="#94A3B8" stroke-width="2"/>
+    <circle cx="320" cy="443" r="16" fill="#FFFFFF" stroke="#94A3B8" stroke-width="2"/>
+    <circle cx="380" cy="443" r="16" fill="#FFFFFF" stroke="#94A3B8" stroke-width="2"/>
+    <circle cx="440" cy="443" r="16" fill="#FFFFFF" stroke="#94A3B8" stroke-width="2"/>
+    <text x="320" y="448" fill="#475569" font-size="15" font-weight="700" text-anchor="middle">A</text>
+    <text x="380" y="448" fill="#475569" font-size="15" font-weight="700" text-anchor="middle">B</text>
+    <text x="440" y="448" fill="#475569" font-size="15" font-weight="700" text-anchor="middle">C</text>
+  </g>
+  <text x="380" y="488" fill="#94A3B8" font-size="14" text-anchor="middle">3 simple asserts · “do A, then B, then C”</text>
+
+  <line x1="540" y1="443" x2="640" y2="443" stroke="#5B7C99" stroke-width="2.5" marker-end="url(#aYellow)"/>
+  <text x="590" y="472" fill="#64748B" font-size="14" font-weight="700" text-anchor="middle">+ steps · + state deps</text>
+  <text x="590" y="489" fill="#64748B" font-size="14" font-weight="700" text-anchor="middle">+ stricter checks</text>
+
+  <text x="815" y="410" fill="#1E293B" font-size="16" font-weight="700" text-anchor="middle">After — rewritten</text>
+  <g>
+    <line x1="690" y1="443" x2="940" y2="443" stroke="#5B7C99" stroke-width="2"/>
+    <circle cx="690" cy="443" r="16" fill="#FFFFFF" stroke="#5B7C99" stroke-width="2"/>
+    <circle cx="740" cy="443" r="16" fill="#FFFFFF" stroke="#5B7C99" stroke-width="2"/>
+    <circle cx="790" cy="443" r="16" fill="#FFFFFF" stroke="#5B7C99" stroke-width="2"/>
+    <circle cx="840" cy="443" r="16" fill="#FFFFFF" stroke="#5B7C99" stroke-width="2"/>
+    <circle cx="890" cy="443" r="16" fill="#FFFFFF" stroke="#5B7C99" stroke-width="2"/>
+    <circle cx="940" cy="443" r="16" fill="#FFFFFF" stroke="#5B7C99" stroke-width="2"/>
+    <text x="690" y="448" fill="#44637C" font-size="15" font-weight="700" text-anchor="middle">A</text>
+    <text x="740" y="448" fill="#44637C" font-size="15" font-weight="700" text-anchor="middle">B</text>
+    <text x="790" y="448" fill="#44637C" font-size="15" font-weight="700" text-anchor="middle">C</text>
+    <text x="840" y="448" fill="#44637C" font-size="15" font-weight="700" text-anchor="middle">D</text>
+    <text x="890" y="448" fill="#44637C" font-size="15" font-weight="700" text-anchor="middle">E</text>
+    <text x="940" y="448" fill="#44637C" font-size="15" font-weight="700" text-anchor="middle">F</text>
+  </g>
+  <text x="815" y="481" fill="#94A3B8" font-size="14" text-anchor="middle">richer asserts on state &amp; output</text>
+  <text x="815" y="499" fill="#94A3B8" font-size="14" text-anchor="middle">goal adds constraints</text>
+</svg>
