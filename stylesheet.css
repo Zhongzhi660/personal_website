@@ -324,6 +324,12 @@ h2:first-of-type {
   box-shadow: 0 1px 2px rgba(201, 42, 42, 0.28);
 }
 
+.news-tag-viral {
+  background: #0f172a;
+  color: #fff;
+  box-shadow: 0 1px 2px rgba(15, 23, 42, 0.28);
+}
+
 .news-title {
   color: #1a1a1a;
   font-weight: 700;
@@ -343,6 +349,43 @@ h2:first-of-type {
 .news-links a:hover {
   color: #f09228;
   text-decoration: underline;
+}
+
+.news-callout {
+  display: block;
+  margin-top: 6px;
+  padding: 6px 10px;
+  background: #eef6fd;
+  border-left: 3px solid #1d9bf0;
+  border-radius: 3px;
+  font-size: 13px;
+  color: #243244;
+  line-height: 1.65;
+}
+
+.news-callout-icon {
+  color: #0f172a;
+  font-weight: 700;
+  margin-right: 6px;
+  font-size: 14px;
+  line-height: 1;
+  vertical-align: -1px;
+}
+
+.news-callout a {
+  color: #1d9bf0;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.news-callout a:hover {
+  color: #0f6ea8;
+  text-decoration: underline;
+}
+
+.news-callout-x {
+  background: #f3f7fb;
+  border-left-color: #0f172a;
 }
 
 .news-highlight-red {
