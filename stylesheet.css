@@ -342,181 +342,66 @@ table.papers tr:hover .paper-image img {
 }
 
 .news-list li.news-item {
-  margin-bottom: 8px;
-  padding: 9px 12px;
+  margin-bottom: 6px;
+  padding: 2px 0;
   font-size: 14px;
-  line-height: 1.75;
+  line-height: 1.7;
   color: #333;
-  border-left: 3px solid transparent;
-  border-radius: 4px;
-  transition: background 0.15s ease, border-color 0.15s ease;
 }
 
 .news-list li.news-item::before {
   content: none;
 }
 
-.news-list li.news-item:hover {
-  background: #f6f8fb;
-  border-left-color: #d1dcec;
-}
-
-.news-list li.news-featured {
-  background: linear-gradient(90deg, rgba(240, 146, 40, 0.12), rgba(240, 146, 40, 0.02) 55%, transparent);
-  border-left-color: #f09228;
-}
-
-.news-list li.news-featured:hover {
-  background: linear-gradient(90deg, rgba(240, 146, 40, 0.18), rgba(240, 146, 40, 0.03) 55%, transparent);
-  border-left-color: #f09228;
-}
-
 .news-date {
   display: inline-block;
   font-family: "SFMono-Regular", Menlo, Consolas, "Liberation Mono", monospace;
-  font-size: 12px;
-  color: #566370;
-  background: #eef1f5;
-  padding: 1px 7px;
-  border-radius: 3px;
-  margin-right: 6px;
-  vertical-align: 2px;
-  font-weight: 600;
-  letter-spacing: 0.02em;
+  font-size: 12.5px;
+  color: #6b7480;
+  margin-right: 8px;
+  font-weight: 500;
+  letter-spacing: 0;
   white-space: nowrap;
 }
 
 .news-badge {
   display: inline-block;
-  font-size: 10.5px;
-  font-weight: 700;
-  letter-spacing: 0.04em;
-  padding: 1px 8px;
-  border-radius: 10px;
-  margin-right: 6px;
-  vertical-align: 2px;
-  text-transform: uppercase;
-  line-height: 1.55;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 0 6px;
+  border-radius: 3px;
+  margin-right: 8px;
+  vertical-align: 1px;
+  line-height: 1.5;
   white-space: nowrap;
+  background: transparent;
+  border: 1px solid #d6dbe2;
+  color: #4a5563;
 }
 
 .news-badge-accept {
-  background: #e6f0fe;
   color: #1450a3;
-  border: 1px solid #c5daf5;
+  border-color: #c5daf5;
 }
 
 .news-badge-oral {
-  background: #fff2df;
   color: #a25409;
-  border: 1px solid #f5cea1;
+  border-color: #f0c68d;
 }
 
 .news-badge-release {
-  background: #ecf7ec;
   color: #1e7a2c;
-  border: 1px solid #c6e8c8;
+  border-color: #c6e8c8;
 }
 
 .news-badge-benchmark {
-  background: #efeafc;
   color: #5a349d;
-  border: 1px solid #d6c9f2;
+  border-color: #d6c9f2;
 }
 
 .news-badge-career {
-  background: #f0f1f4;
   color: #4a5563;
-  border: 1px solid #dcdfe4;
-}
-
-.news-tag {
-  display: inline-block;
-  font-size: 10px;
-  font-weight: 800;
-  letter-spacing: 0.08em;
-  padding: 1px 7px;
-  border-radius: 9px;
-  margin-right: 6px;
-  vertical-align: 2px;
-  text-transform: uppercase;
-  line-height: 1.55;
-}
-
-.news-tag-new {
-  background: #c92a2a;
-  color: #fff;
-  box-shadow: 0 1px 2px rgba(201, 42, 42, 0.28);
-}
-
-.news-tag-viral {
-  background: #0f172a;
-  color: #fff;
-  box-shadow: 0 1px 2px rgba(15, 23, 42, 0.28);
-}
-
-.news-tag-hf {
-  background: #ff9d00;
-  color: #1a1a1a;
-  box-shadow: 0 1px 2px rgba(255, 157, 0, 0.32);
-}
-
-.news-title {
-  color: #1a1a1a;
-  font-weight: 700;
-}
-
-.news-links {
-  margin-top: 4px;
-  font-size: 13px;
-}
-
-.news-links a {
-  color: #1772d0;
-  text-decoration: none;
-  font-weight: 600;
-}
-
-.news-links a:hover {
-  color: #f09228;
-  text-decoration: underline;
-}
-
-.news-callout {
-  display: block;
-  margin-top: 6px;
-  padding: 6px 10px;
-  background: #eef6fd;
-  border-left: 3px solid #1d9bf0;
-  border-radius: 3px;
-  font-size: 13px;
-  color: #243244;
-  line-height: 1.65;
-}
-
-.news-callout-icon {
-  color: #0f172a;
-  font-weight: 700;
-  margin-right: 6px;
-  font-size: 14px;
-  line-height: 1;
-  vertical-align: -1px;
-}
-
-.news-callout a {
-  color: #1d9bf0;
-  font-weight: 600;
-  text-decoration: none;
-}
-
-.news-callout a:hover {
-  color: #0f6ea8;
-  text-decoration: underline;
-}
-
-.news-callout-x {
-  background: #f3f7fb;
-  border-left-color: #0f172a;
+  border-color: #dcdfe4;
 }
 
 .news-highlight-red {
@@ -536,16 +421,6 @@ a.news-arxiv-link {
 .news-list a:hover,
 a.news-arxiv-link:hover {
   color: #f09228;
-}
-
-.news-award-red {
-  color: #c00;
-  font-weight: bold;
-}
-
-.news-award-black {
-  color: #000;
-  font-weight: bold;
 }
 
 /* Media Coverage (last section): Source: "Title" with Title as link */
