@@ -36,6 +36,69 @@ body {
   text-align: left;
 }
 
+/* Accessibility: skip link (visible when focused) */
+.skip-link {
+  position: absolute;
+  top: -100px;
+  left: 12px;
+  background: #1772d0;
+  color: #fff;
+  padding: 8px 14px;
+  border-radius: 0 0 6px 6px;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  z-index: 200;
+  transition: top 0.15s ease;
+}
+
+.skip-link:focus {
+  top: 0;
+  outline: 2px solid #f09228;
+  outline-offset: 2px;
+  color: #fff;
+}
+
+/* Sticky section navigation */
+.section-nav {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  display: flex;
+  gap: 22px;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 28px -20px 0 -20px;
+  padding: 10px 20px;
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: saturate(180%) blur(8px);
+  -webkit-backdrop-filter: saturate(180%) blur(8px);
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #e8e8e8;
+  font-size: 13.5px;
+}
+
+.section-nav a {
+  color: #555;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  text-decoration: none;
+  padding: 4px 0;
+  border-bottom: 2px solid transparent;
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+
+.section-nav a:hover,
+.section-nav a:focus {
+  color: #1772d0;
+  border-bottom-color: #1772d0;
+}
+
+/* Anchor scroll offset so sticky nav doesn't clip headings */
+h2[id] {
+  scroll-margin-top: 72px;
+}
+
 a {
   color: #1772d0;
   text-decoration: none;
@@ -201,6 +264,68 @@ h2:first-of-type {
 
 .papertitle a:hover {
   color: #1772d0;
+}
+
+/* Publication row hover polish + image lift */
+table.papers tr {
+  transition: background 0.18s ease;
+}
+
+table.papers tr:hover {
+  background: #fafbfd;
+}
+
+.paper-image img {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+table.papers tr:hover .paper-image img {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 14px rgba(23, 60, 128, 0.10);
+}
+
+/* Venue chip above paper title */
+.paper-venue {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding: 2px 9px;
+  border-radius: 10px;
+  margin: 0 0 6px 0;
+  line-height: 1.55;
+  white-space: nowrap;
+}
+
+.venue-emnlp {
+  background: #e6f0fe;
+  color: #1450a3;
+  border: 1px solid #c5daf5;
+}
+
+.venue-oral {
+  background: #fff2df;
+  color: #a25409;
+  border: 1px solid #f5cea1;
+}
+
+.venue-arxiv {
+  background: #ecf7ec;
+  color: #1e7a2c;
+  border: 1px solid #c6e8c8;
+}
+
+.venue-benchmark {
+  background: #efeafc;
+  color: #5a349d;
+  border: 1px solid #d6c9f2;
+}
+
+.venue-journal {
+  background: #f0f1f4;
+  color: #4a5563;
+  border: 1px solid #dcdfe4;
 }
 
 .publication-note {
@@ -586,6 +711,24 @@ table.papers tr:last-child td {
   h2 {
     margin-top: 24px;
     font-size: 18px;
+  }
+
+  .section-nav {
+    margin: 20px -12px 0 -12px;
+    padding: 8px 12px;
+    gap: 14px;
+    font-size: 13px;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .section-nav a {
+    white-space: nowrap;
+  }
+
+  h2[id] {
+    scroll-margin-top: 60px;
   }
 
   table.papers td.paper-image {

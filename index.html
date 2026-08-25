@@ -5,24 +5,68 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Zhongzhi Li is a Ph.D. student at the University of Georgia researching long-horizon AI agents, scalable task synthesis, trajectory learning, and verifiable post-training.">
   <meta name="author" content="Zhongzhi Li">
+  <meta name="theme-color" content="#1772d0">
   <link rel="canonical" href="https://zhongzhi660.github.io/personal_website/">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Zhongzhi Li (李忠智)">
   <meta property="og:description" content="Research on long-horizon AI agents, scalable task synthesis, trajectory learning, and reliable foundation models.">
   <meta property="og:url" content="https://zhongzhi660.github.io/personal_website/">
-  <meta property="og:image" content="https://zhongzhi660.github.io/personal_website/images/me.jpg">
-  <meta name="twitter:card" content="summary">
+  <meta property="og:image" content="https://zhongzhi660.github.io/personal_website/images/og_card.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Zhongzhi Li — Ph.D. Student at the University of Georgia">
+  <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:creator" content="@Zhongzhi4402952">
+  <meta name="twitter:title" content="Zhongzhi Li (李忠智)">
+  <meta name="twitter:description" content="Research on long-horizon AI agents, scalable task synthesis, trajectory learning, and reliable foundation models.">
+  <meta name="twitter:image" content="https://zhongzhi660.github.io/personal_website/images/og_card.jpg">
   <title>Zhongzhi Li (李忠智)</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="stylesheet.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Zhongzhi Li",
+    "alternateName": "李忠智",
+    "url": "https://zhongzhi660.github.io/personal_website/",
+    "image": "https://zhongzhi660.github.io/personal_website/images/me.jpg",
+    "jobTitle": "Ph.D. Student",
+    "worksFor": {
+      "@type": "CollegeOrUniversity",
+      "name": "University of Georgia, School of Computing",
+      "url": "https://computing.uga.edu/"
+    },
+    "alumniOf": {
+      "@type": "CollegeOrUniversity",
+      "name": "Fudan University",
+      "url": "https://ciram.fudan.edu.cn/"
+    },
+    "email": "mailto:zl22754@uga.edu",
+    "sameAs": [
+      "https://github.com/Zhongzhi660",
+      "https://huggingface.co/Zhongzhi1228",
+      "https://x.com/Zhongzhi4402952",
+      "https://www.linkedin.com/in/zhongzhi-li-167b333b1/"
+    ],
+    "knowsAbout": [
+      "Long-horizon AI agents",
+      "Scalable task synthesis",
+      "Trajectory learning",
+      "Verifiable post-training",
+      "Foundation-model interpretability"
+    ]
+  }
+  </script>
 </head>
 <body>
-  <div class="container">
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <main class="container" id="main-content">
     <div class="header-block">
       <div class="header-info">
-        <p class="name">Zhongzhi Li (李忠智)</p>
+        <p class="name">Zhongzhi Li (<span lang="zh-Hans">李忠智</span>)</p>
         <p>
-          I am a Ph.D. student in the <a href="https://computing.uga.edu/">School of Computing</a> at the University of Georgia, advised by <a href="https://ninghaohello.github.io/">Dr. Ninghao Liu</a>. I received my M.S. from the <a href="https://ciram.fudan.edu.cn/">School of Intelligent Robotics and Advanced Manufacturing Innovation</a> at Fudan University. My research focuses on building reliable long-horizon AI agents through scalable task synthesis, trajectory learning, and verifiable post-training, with broader interests in foundation-model interpretability, controllability, and safety.
+          I am a Ph.D. student in the <a href="https://computing.uga.edu/" target="_blank" rel="noopener noreferrer">School of Computing</a> at the University of Georgia, advised by <a href="https://ninghaohello.github.io/" target="_blank" rel="noopener noreferrer">Dr. Ninghao Liu</a>. I received my M.S. from the <a href="https://ciram.fudan.edu.cn/" target="_blank" rel="noopener noreferrer">School of Intelligent Robotics and Advanced Manufacturing Innovation</a> at Fudan University. My research focuses on building reliable long-horizon AI agents through scalable task synthesis, trajectory learning, and verifiable post-training, with broader interests in foundation-model interpretability, controllability, and safety.
         </p>
         <p class="links">
           <a href="mailto:zl22754@uga.edu">Email</a> &nbsp;/&nbsp;
@@ -38,7 +82,15 @@
       </div>
     </div>
 
-    <h2>News</h2>
+    <nav class="section-nav" aria-label="Section navigation">
+      <a href="#news">News</a>
+      <a href="#publications">Publications</a>
+      <a href="#honors">Honors &amp; Experience</a>
+      <a href="#service">Service</a>
+      <a href="#coverage">Media Coverage</a>
+    </nav>
+
+    <h2 id="news">News</h2>
     <ul class="news-list">
       <li class="news-item news-featured">
         <span class="news-date">2026-08</span>
@@ -95,7 +147,7 @@
       </li>
     </ul>
 
-    <h2>Selected Publications</h2>
+    <h2 id="publications">Selected Publications</h2>
 
     <table class="papers">
       <tr>
@@ -103,9 +155,9 @@
           <img src="images/paper_jailbreak_motifs.jpg" alt="Four-stage pipeline for discovering jailbreak motifs via SAE features, NMF motifs, motif-guided data synthesis, and DPO training" loading="lazy" decoding="async">
         </td>
         <td class="paper-text">
+          <span class="paper-venue venue-emnlp">EMNLP 2026 · Main</span>
           <p class="papertitle"><a href="https://openreview.net/forum?id=bCyT37aWP2" target="_blank" rel="noopener noreferrer">Beyond Prompts: Discovering Jailbreak Motifs in Sparse Feature Space</a></p>
           <p><strong>Zhongzhi Li</strong>, et al.</p>
-          <p>EMNLP 2026 (Main Conference).</p>
           <p><a href="https://openreview.net/forum?id=bCyT37aWP2" target="_blank" rel="noopener noreferrer">OpenReview</a></p>
           <p>We study jailbreak behavior through sparse feature-space motifs, moving beyond surface prompt patterns toward interpretable feature-level mechanisms for understanding and auditing model safety.</p>
         </td>
@@ -115,10 +167,10 @@
           <img src="images/paper_rst.svg" alt="Recursive synthesis pipeline for long-horizon terminal tasks" loading="lazy" decoding="async">
         </td>
         <td class="paper-text">
-          <p class="papertitle"><a href="https://zhongzhi660.github.io/recursive-verified-synthesis-site/">Recursive Synthesis for Long-Horizon Terminal Tasks</a></p>
+          <span class="paper-venue venue-arxiv">arXiv 2026</span>
+          <p class="papertitle"><a href="https://zhongzhi660.github.io/recursive-verified-synthesis-site/" target="_blank" rel="noopener noreferrer">Recursive Synthesis for Long-Horizon Terminal Tasks</a></p>
           <p><strong>Zhongzhi Li</strong>*, Yucheng Shi*, Zongxia Li*, et al.</p>
-          <p>arXiv preprint, 2026.</p>
-          <p><a href="https://zhongzhi660.github.io/recursive-verified-synthesis-site/">project page</a> / <a href="https://arxiv.org/abs/2608.05466" target="_blank" rel="noopener noreferrer">arXiv</a> / <a href="https://huggingface.co/papers/2608.05466" target="_blank" rel="noopener noreferrer">Hugging Face</a> / <a href="https://huggingface.co/collections/Zhongzhi1228/recursive-task-synthesis" target="_blank" rel="noopener noreferrer">data &amp; models</a></p>
+          <p><a href="https://zhongzhi660.github.io/recursive-verified-synthesis-site/" target="_blank" rel="noopener noreferrer">project page</a> / <a href="https://arxiv.org/abs/2608.05466" target="_blank" rel="noopener noreferrer">arXiv</a> / <a href="https://huggingface.co/papers/2608.05466" target="_blank" rel="noopener noreferrer">Hugging Face</a> / <a href="https://huggingface.co/collections/Zhongzhi1228/recursive-task-synthesis" target="_blank" rel="noopener noreferrer">data &amp; models</a></p>
           <p>We introduce Recursive Synthetic Terminal Tasks (RST), a solution-first framework that recursively constructs and validates long-horizon terminal tasks. Across 15 rounds, RST produces 37,484 verified tasks and 327,189 agent trajectories that support both supervised and reinforcement learning.</p>
         </td>
       </tr>
@@ -127,9 +179,9 @@
           <img src="images/paper_sat.png" alt="Batch-wise asynchronous reinforcement learning pipeline" loading="lazy" decoding="async">
         </td>
         <td class="paper-text">
+          <span class="paper-venue venue-arxiv">arXiv 2026</span>
           <p class="papertitle"><a href="https://jyyang26.github.io/stable_async_analysis/" target="_blank" rel="noopener noreferrer">Stale but Stable: Staleness-Adaptive Trust Regions for Stabilizing Asynchronous Reinforcement Learning</a></p>
           <p>Junyao Yang, Yucheng Shi, Zongxia Li, <strong>Zhongzhi Li</strong>, et al.</p>
-          <p>arXiv preprint, 2026.</p>
           <p><a href="https://jyyang26.github.io/stable_async_analysis/" target="_blank" rel="noopener noreferrer">project page</a> / <a href="https://arxiv.org/abs/2607.18722" target="_blank" rel="noopener noreferrer">arXiv</a> / <a href="https://huggingface.co/papers/2607.18722" target="_blank" rel="noopener noreferrer">Hugging Face</a> / <a href="https://github.com/jyyang26/SAT" target="_blank" rel="noopener noreferrer">code</a></p>
           <p>We introduce Staleness-Adaptive Trust Region (SAT), a directional clipping mechanism that tightens PPO-style updates on the high-staleness tail while preserving ordinary and pull-back updates, improving stability in asynchronous LLM reinforcement learning.</p>
         </td>
@@ -139,9 +191,9 @@
           <img src="images/paper_harness_handbook.png" alt="Harness Handbook three-level behavior-to-code representation" loading="lazy" decoding="async">
         </td>
         <td class="paper-text">
+          <span class="paper-venue venue-arxiv">arXiv 2026</span>
           <p class="papertitle"><a href="https://ruhan-wang.github.io/Harness-Handbook/" target="_blank" rel="noopener noreferrer">Harness Handbook: Making Evolving Agent Harnesses Readable, Navigable, and Editable</a></p>
           <p>Ruhan Wang, Yucheng Shi, Zongxia Li, <strong>Zhongzhi Li</strong>, et al.</p>
-          <p>arXiv preprint, 2026.</p>
           <p><a href="https://ruhan-wang.github.io/Harness-Handbook/" target="_blank" rel="noopener noreferrer">project page</a> / <a href="https://arxiv.org/abs/2607.13285" target="_blank" rel="noopener noreferrer">arXiv</a> / <a href="https://huggingface.co/papers/2607.13285" target="_blank" rel="noopener noreferrer">Hugging Face</a> / <a href="https://github.com/Ruhan-Wang/Harness_Handbook" target="_blank" rel="noopener noreferrer">code</a></p>
           <p>We introduce a behavior-centric representation that maps agent-harness behaviors to source code, together with Behavior-Guided Progressive Disclosure for improving behavior localization and edit planning while using fewer planner tokens.</p>
         </td>
@@ -151,9 +203,9 @@
           <img src="images/paper_lhtb.png" alt="Long-Horizon-Terminal-Bench task and grading pipeline" loading="lazy" decoding="async">
         </td>
         <td class="paper-text">
+          <span class="paper-venue venue-benchmark">Benchmark · arXiv 2026</span>
           <p class="papertitle"><a href="https://zli12321.github.io/LHTB/" target="_blank" rel="noopener noreferrer">Long-Horizon-Terminal-Bench: Testing the Limits of Agents on Long-Horizon Terminal Tasks with Dense Reward-Based Grading</a></p>
           <p>Zongxia Li*, <strong>Zhongzhi Li</strong>*, Yucheng Shi*, et al.</p>
-          <p>arXiv preprint, 2026.</p>
           <p><a href="https://zli12321.github.io/LHTB/" target="_blank" rel="noopener noreferrer">project page</a> / <a href="https://arxiv.org/abs/2607.08964" target="_blank" rel="noopener noreferrer">arXiv</a> / <a href="https://github.com/zli12321/LHTB" target="_blank" rel="noopener noreferrer">code</a> / <a href="https://huggingface.co/datasets/IntelligenceLab/Long-Horizon-Terminal-Bench" target="_blank" rel="noopener noreferrer">dataset</a> / <a href="https://zli12321.github.io/LHTB/leaderboard.html" target="_blank" rel="noopener noreferrer">leaderboard</a></p>
           <p>We introduce a benchmark of 46 long-horizon terminal tasks across nine categories, with dense partial-credit grading for measuring progress through workflows that require hundreds of interactions.</p>
         </td>
@@ -163,10 +215,10 @@
           <img src="images/paper_lessisenough.jpg" alt="Less is Enough" loading="lazy" decoding="async">
         </td>
         <td class="paper-text">
-          <p class="papertitle"><a href="https://website-sigma-three-35.vercel.app/">Less is Enough: Synthesizing Diverse Data in Feature Space of LLMs</a></p>
+          <span class="paper-venue venue-oral">ICML 2026 · Oral</span>
+          <p class="papertitle"><a href="https://website-sigma-three-35.vercel.app/" target="_blank" rel="noopener noreferrer">Less is Enough: Synthesizing Diverse Data in Feature Space of LLMs</a></p>
           <p><strong>Zhongzhi Li</strong>*, Xuansheng Wu*, Yijiang Li, Lijie Hu, Ninghao Liu.</p>
-          <p>ICML 2026 Oral.</p>
-          <p><a href="https://website-sigma-three-35.vercel.app/">project page</a> / <a href="https://arxiv.org/abs/2602.10388" target="_blank" rel="noopener noreferrer">arXiv</a> / <a href="https://github.com/Zhongzhi660/FAC-Synthesis">code</a></p>
+          <p><a href="https://website-sigma-three-35.vercel.app/" target="_blank" rel="noopener noreferrer">project page</a> / <a href="https://arxiv.org/abs/2602.10388" target="_blank" rel="noopener noreferrer">arXiv</a> / <a href="https://github.com/Zhongzhi660/FAC-Synthesis" target="_blank" rel="noopener noreferrer">code</a></p>
           <p>We introduce Feature Activation Coverage (FAC) and a diversity-driven data synthesis framework that improves data diversity and downstream performance on instruction following, toxicity detection, reward modeling, and behavior steering.</p>
         </td>
       </tr>
@@ -175,16 +227,16 @@
           <img src="images/paper_neurocomputing.jpg" alt="Neurocomputing paper overview" loading="lazy" decoding="async">
         </td>
         <td class="paper-text">
-          <p class="papertitle"><a href="https://www.sciencedirect.com/science/article/pii/S0925231225020363?casa_token=KX2yQS-ZPfgAAAAA:ubPbFJIYtZlpt2KuwSqTpx-GizcYbeBgGjVi-cV65rFOpoAhGd44roILizHHCQz5M_ozHQk1-mg">Scalable and reliable deep transfer learning for intelligent fault detection via multi-scale neural processes embedded with prior knowledge</a></p>
+          <span class="paper-venue venue-journal">Neurocomputing 2025</span>
+          <p class="papertitle"><a href="https://www.sciencedirect.com/science/article/pii/S0925231225020363" target="_blank" rel="noopener noreferrer">Scalable and reliable deep transfer learning for intelligent fault detection via multi-scale neural processes embedded with prior knowledge</a></p>
           <p><strong>Zhongzhi Li</strong>, Jingqi Tu, Jiachen Zhu, et al.</p>
-          <p>Neurocomputing, 2025.</p>
-          <p><a href="https://www.sciencedirect.com/science/article/pii/S0925231225020363?casa_token=KX2yQS-ZPfgAAAAA:ubPbFJIYtZlpt2KuwSqTpx-GizcYbeBgGjVi-cV65rFOpoAhGd44roILizHHCQz5M_ozHQk1-mg">paper</a></p>
+          <p><a href="https://www.sciencedirect.com/science/article/pii/S0925231225020363" target="_blank" rel="noopener noreferrer">paper</a></p>
         </td>
       </tr>
     </table>
     <p class="publication-note">* Equal contribution.</p>
 
-    <h2>Honors &amp; Experience</h2>
+    <h2 id="honors">Honors &amp; Experience</h2>
 
     <p class="honors-sub-inline"><strong>Graduate studies.</strong> Received 6 scholarships.</p>
     <ul class="honors-list">
@@ -203,17 +255,17 @@
     <h3 class="honors-sub">Experience</h3>
     <ul class="honors-list">
       <li>Agent Algorithm Intern at Tencent <span class="honors-date">May 2026 – Present</span></li>
-      <li>Robotics Algorithm Intern at <a href="https://x2robot.com/">X Square Robot</a> <span class="honors-date">May 2025 – Jul 2025</span></li>
-      <li>Algorithm Engineer Intern at <a href="https://www.gotion.com.cn/">Guoxuan High-Tech Co., Ltd</a> <span class="honors-date">Sep 2022 – Sep 2023</span></li>
-      <li>Quantitative Research Intern at <a href="https://dgzq.com.cn/dz-ow/pcfront/#/dz/indexMain">Dongguan Securities Co., Ltd</a> (Shanghai) <span class="honors-date">May 2022 – Aug 2022</span></li>
+      <li>Robotics Algorithm Intern at <a href="https://x2robot.com/" target="_blank" rel="noopener noreferrer">X Square Robot</a> <span class="honors-date">May 2025 – Jul 2025</span></li>
+      <li>Algorithm Engineer Intern at <a href="https://www.gotion.com.cn/" target="_blank" rel="noopener noreferrer">Guoxuan High-Tech Co., Ltd</a> <span class="honors-date">Sep 2022 – Sep 2023</span></li>
+      <li>Quantitative Research Intern at <a href="https://dgzq.com.cn/dz-ow/pcfront/#/dz/indexMain" target="_blank" rel="noopener noreferrer">Dongguan Securities Co., Ltd</a> (Shanghai) <span class="honors-date">May 2022 – Aug 2022</span></li>
     </ul>
 
-    <h2>Service</h2>
+    <h2 id="service">Service</h2>
     <p class="section-intro">
       Reviewer for IEEE Transactions on Artificial Intelligence, IEEE Transactions on Industrial Informatics, IEEE Internet of Things Journal, and AAAI.
     </p>
 
-    <h2>Media Coverage</h2>
+    <h2 id="coverage">Media Coverage</h2>
     <ul class="media-coverage-list">
       <li>Hugging Face: "<a href="https://huggingface.co/papers/2608.05466" target="_blank" rel="noopener noreferrer">Recursive Synthesis for Long-Horizon Terminal Tasks — #1 Paper of the Week (Aug 2–8)</a>"</li>
       <li>Hugging Face: "<a href="https://huggingface.co/papers/week/2026-W29" target="_blank" rel="noopener noreferrer">Harness Handbook — #1 Paper of the Week</a>"</li>
@@ -225,8 +277,8 @@
 
     <footer>
       <p>Site last updated in August 2026.</p>
-      <p>Designed and sourced code based on <a href="https://github.com/jonbarron/jonbarron_website">Jon Barron's website</a>.</p>
+      <p>Designed and sourced code based on <a href="https://github.com/jonbarron/jonbarron_website" target="_blank" rel="noopener noreferrer">Jon Barron's website</a>.</p>
     </footer>
-  </div>
+  </main>
 </body>
 </html>
