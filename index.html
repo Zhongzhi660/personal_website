@@ -82,6 +82,7 @@
     </div>
 
     <nav class="section-nav" aria-label="Section navigation">
+      <a href="#impact">Impact</a>
       <a href="#news">News</a>
       <a href="#publications">Publications</a>
       <a href="#honors">Honors &amp; Experience</a>
@@ -89,8 +90,53 @@
       <a href="#coverage">Media Coverage</a>
     </nav>
 
+    <h2 id="impact">Research Impact</h2>
+    <p class="section-intro impact-intro">How other groups use the benchmarks, data, and methods we released, with links to their papers and releases. Figures as of November 2026.</p>
+
+    <div class="impact-block">
+      <p class="impact-title"><a href="https://zli12321.github.io/LHTB/" target="_blank" rel="noopener noreferrer">Long-Horizon-Terminal-Bench (LHTB)</a> <span class="impact-paper-links"><a href="https://arxiv.org/abs/2607.08964" target="_blank" rel="noopener noreferrer">arXiv</a> / <a href="https://arxiv.org/abs/2610.14146" target="_blank" rel="noopener noreferrer">LHTB 2.0</a></span></p>
+      <ul class="impact-list">
+        <li>Listed as an <strong>Official Benchmark</strong> on <a href="https://huggingface.co/datasets/IntelligenceLab/Long-Horizon-Terminal-Bench" target="_blank" rel="noopener noreferrer">Hugging Face</a>, one of <a href="https://huggingface.co/datasets?benchmark=benchmark:official" target="_blank" rel="noopener noreferrer">59 datasets</a> with this label, alongside Humanity's Last Exam, GPQA, and SWE-bench Verified.</li>
+        <li>LHTB and LHTB 2.0 run in <a href="https://meridianlabs-ai.github.io/inspect_harbor/registry/long_horizon_terminal_bench.html" target="_blank" rel="noopener noreferrer">Inspect</a>, the evaluation framework of the <strong>UK AI Security Institute</strong>, through its Harbor integration.</li>
+        <li>Used in experiments by independent groups: Notre Dame and Penn in <a href="https://arxiv.org/abs/2610.17616" target="_blank" rel="noopener noreferrer"><em>StateHarness</em></a>, Zhejiang University and Oxford in <a href="https://arxiv.org/abs/2611.10884" target="_blank" rel="noopener noreferrer"><em>Keeping LLM Agents on Procedure</em></a>, Fudan in <a href="https://arxiv.org/abs/2609.34649" target="_blank" rel="noopener noreferrer"><em>Beyond Skill Evolution</em></a>, and CUHK-Shenzhen in <a href="https://arxiv.org/abs/2609.16887" target="_blank" rel="noopener noreferrer"><em>QART</em></a>. UNSW, Johns Hopkins, CMU, and others studied its agent runs in <a href="https://arxiv.org/abs/2609.32776" target="_blank" rel="noopener noreferrer"><em>On the Behavioral Traits of LLM Agents</em></a>.</li>
+        <li>Covered, together with RST, in the survey <a href="https://arxiv.org/abs/2608.20485" target="_blank" rel="noopener noreferrer"><em>Terminal Agents: A Survey of AI Agents in Command-Line Environments</em></a>.</li>
+        <li>Open-source agent projects <a href="https://loopx-project.github.io/loopx/benchmarks/lhtb/" target="_blank" rel="noopener noreferrer">LoopX</a> and <a href="https://github.com/getkimchi/kimchi/pull/1179" target="_blank" rel="noopener noreferrer">Kimchi</a> test their systems on it. The <a href="https://zli12321.github.io/LHTB/leaderboard.html" target="_blank" rel="noopener noreferrer">leaderboard</a> covers 17 frontier models from xAI, Anthropic, OpenAI, and Google and accepts outside submissions.</li>
+        <li><a href="https://huggingface.co/datasets/IntelligenceLab/Long-Horizon-Terminal-Bench" target="_blank" rel="noopener noreferrer"><strong>68K+</strong> dataset downloads</a> and <a href="https://scholar.google.com/citations?user=tZTDtW4AAAAJ" target="_blank" rel="noopener noreferrer"><strong>35</strong> Google Scholar citations</a>. Results shared three times by <strong>@elonmusk</strong> (<a href="https://x.com/elonmusk/status/2076909201524203973" target="_blank" rel="noopener noreferrer">Jul 14</a>, <a href="https://x.com/elonmusk/status/2077412964231991420" target="_blank" rel="noopener noreferrer">Jul 15</a>, <a href="https://x.com/elonmusk/status/2079430412837757338" target="_blank" rel="noopener noreferrer">Jul 21</a>) and featured in <a href="https://tldr.tech/ai/2026-07-14" target="_blank" rel="noopener noreferrer">TLDR AI</a>.</li>
+      </ul>
+    </div>
+
+    <div class="impact-block">
+      <p class="impact-title"><a href="https://zhongzhi660.github.io/recursive-verified-synthesis-site/" target="_blank" rel="noopener noreferrer">Recursive Synthesis (RST)</a> <span class="impact-paper-links"><a href="https://arxiv.org/abs/2608.05466" target="_blank" rel="noopener noreferrer">arXiv</a> / <a href="https://huggingface.co/datasets/Zhongzhi1228/Recursive-Task-Synthesis" target="_blank" rel="noopener noreferrer">data</a></span></p>
+      <ul class="impact-list">
+        <li>In <a href="https://arxiv.org/abs/2606.23321" target="_blank" rel="noopener noreferrer"><em>Tmax</em></a> (Ai2 and University of Washington), the same model was trained with RL on each of 12 existing terminal datasets. RST data gave the <strong>highest Terminal-Bench Lite score</strong> of the 12 (63.4, up from 49.4).</li>
+        <li>In <a href="https://arxiv.org/abs/2611.01927" target="_blank" rel="noopener noreferrer"><em>Is Your Long-Horizon Benchmark Really Deep?</em></a>, researchers at Notre Dame, CMU, IBM Research, Georgia Tech, USC, and Microsoft Research audited 734 tasks from six terminal datasets and found that RST has <strong>"the deepest synthetic tasks"</strong>. Its share of tasks that need five or more sequential turns was the highest of the six, including two written by people.</li>
+        <li>Adopted as a reference design or comparison system by Microsoft in <a href="https://arxiv.org/abs/2610.14163" target="_blank" rel="noopener noreferrer"><em>AutoEnvScaling</em></a>, Alibaba's Qwen team in <a href="https://arxiv.org/abs/2609.04148" target="_blank" rel="noopener noreferrer"><em>Terminal-Universe</em></a>, and Shanghai Jiao Tong University and Ant Group in <a href="https://arxiv.org/abs/2610.41479" target="_blank" rel="noopener noreferrer"><em>EvoMCP</em></a>.</li>
+        <li>The data were republished or rebuilt by <a href="https://huggingface.co/datasets/PrimeIntellect/Recursive-Task-Synthesis" target="_blank" rel="noopener noreferrer">Prime Intellect</a>, the <a href="https://huggingface.co/datasets/TMaxxx/agent-task-recursive-task-synthesis" target="_blank" rel="noopener noreferrer">Tmax team</a>, <a href="https://huggingface.co/datasets/open-athena/recursive-task-synthesis-glm-5.3-rollouts" target="_blank" rel="noopener noreferrer">Open Athena</a>, and <a href="https://huggingface.co/datasets/laion/rts-1k-rootless-apptainer" target="_blank" rel="noopener noreferrer">LAION</a>.</li>
+        <li><a href="https://huggingface.co/datasets/Zhongzhi1228/Recursive-Task-Synthesis" target="_blank" rel="noopener noreferrer"><strong>37,484</strong> verified tasks</a> at about <strong>$0.05</strong> each. <strong>37K+</strong> downloads of the official datasets, and <a href="https://huggingface.co/datasets/laion/rts-1k-rootless-apptainer" target="_blank" rel="noopener noreferrer">44K+ of LAION's validated subset</a>. Covered in a deep dive by <a href="https://alphasignal.ai/news/when-to-gate-recursive-terminal-task-synthesis" target="_blank" rel="noopener noreferrer">AlphaSignal</a>.</li>
+      </ul>
+    </div>
+
+    <div class="impact-block">
+      <p class="impact-title"><a href="https://website-sigma-three-35.vercel.app/" target="_blank" rel="noopener noreferrer">Less is Enough</a> <span class="news-badge news-badge-oral">ICML 2026 · Oral</span> <span class="impact-paper-links"><a href="https://arxiv.org/abs/2602.10388" target="_blank" rel="noopener noreferrer">arXiv</a> / <a href="https://github.com/Zhongzhi660/FAC-Synthesis" target="_blank" rel="noopener noreferrer">code</a></span></p>
+      <ul class="impact-list">
+        <li>Accepted as an <a href="https://icml.cc/virtual/2026/events/oral" target="_blank" rel="noopener noreferrer"><strong>Oral</strong> at ICML 2026</a> (top 0.7%).</li>
+        <li>With <strong>2K</strong> synthesized examples, matches <a href="https://arxiv.org/abs/2406.08464" target="_blank" rel="noopener noreferrer"><em>Magpie</em></a>, which uses 300K, on instruction following: about <strong>1/150</strong> of the data.</li>
+        <li><a href="https://x.com/huggingface/status/2026011044812865932" target="_blank" rel="noopener noreferrer">#1 Paper of the Week</a> on Hugging Face (Feb 16–22), and covered by <a href="https://mp.weixin.qq.com/s/tk_cZIz-_ErJtyNhUpiS0g" target="_blank" rel="noopener noreferrer">PaperWeekly</a> and <a href="https://www.linkedin.com/pulse/tai-192-ai-enters-scientific-discovery-q0mje/" target="_blank" rel="noopener noreferrer">Towards AI</a>.</li>
+      </ul>
+    </div>
+
     <h2 id="news">News</h2>
     <ul class="news-list">
+      <li class="news-item">
+        <span class="news-date">2026-11</span>
+        <span class="news-badge news-badge-benchmark">Impact</span>
+        <a href="https://arxiv.org/abs/2606.23321" target="_blank" rel="noopener noreferrer">Tmax</a> (Ai2 and UW) trained the same model on 12 existing terminal datasets: <strong>Recursive Synthesis</strong> data gave the highest Terminal-Bench Lite score of the 12.
+      </li>
+      <li class="news-item">
+        <span class="news-date">2026-11</span>
+        <span class="news-badge news-badge-benchmark">Impact</span>
+        A <a href="https://arxiv.org/abs/2611.01927" target="_blank" rel="noopener noreferrer">six-dataset audit</a> by researchers at Notre Dame, CMU, IBM Research, USC, Microsoft Research, and others found that Recursive Synthesis has <strong>"the deepest synthetic tasks"</strong>.
+      </li>
       <li class="news-item">
         <span class="news-date">2026-10</span>
         <span class="news-badge news-badge-release">arXiv 2026</span>
@@ -343,13 +389,15 @@
       <li>Hugging Face: "<a href="https://huggingface.co/papers/2608.05466" target="_blank" rel="noopener noreferrer">Recursive Synthesis for Long-Horizon Terminal Tasks — #1 Paper of the Week (Aug 2–8)</a>"</li>
       <li>Hugging Face: "<a href="https://huggingface.co/papers/week/2026-W29" target="_blank" rel="noopener noreferrer">Harness Handbook — #1 Paper of the Week</a>"</li>
       <li>Elon Musk on X: shared <a href="https://zli12321.github.io/LHTB/" target="_blank" rel="noopener noreferrer">Long-Horizon-Terminal-Bench</a> results three times, 12.8M combined views (<a href="https://x.com/elonmusk/status/2076909201524203973" target="_blank" rel="noopener noreferrer">July 14 post</a>; <a href="https://x.com/elonmusk/status/2077412964231991420" target="_blank" rel="noopener noreferrer">July 15 post</a>; <a href="https://x.com/elonmusk/status/2079430412837757338" target="_blank" rel="noopener noreferrer">July 21 post</a>).</li>
+      <li>TLDR AI: "<a href="https://tldr.tech/ai/2026-07-14" target="_blank" rel="noopener noreferrer">Long-Horizon-Terminal-Bench</a>" (July 14, 2026)</li>
+      <li>AlphaSignal: "<a href="https://alphasignal.ai/news/when-to-gate-recursive-terminal-task-synthesis" target="_blank" rel="noopener noreferrer">When to Gate Recursive Terminal-task Synthesis</a>" (Sept 8, 2026)</li>
       <li>Hugging Face: "<a href="https://x.com/huggingface/status/2026011044812865932" target="_blank" rel="noopener noreferrer">Top AI Papers of The Week (Feb 16-22)</a>"</li>
       <li>Towards AI: "<a href="https://www.linkedin.com/pulse/tai-192-ai-enters-scientific-discovery-q0mje/" target="_blank" rel="noopener noreferrer">Top Papers of The Week</a>"</li>
       <li>PaperWeekly: "<a href="https://mp.weixin.qq.com/s/tk_cZIz-_ErJtyNhUpiS0g" target="_blank" rel="noopener noreferrer">还在盲目堆数据？用SAE特征空间指导合成，2K样本轻松追平300K SOTA</a>"</li>
     </ul>
 
     <footer>
-      <p>Site last updated in October 2026.</p>
+      <p>Site last updated in November 2026.</p>
       <p>Designed and sourced code based on <a href="https://github.com/jonbarron/jonbarron_website" target="_blank" rel="noopener noreferrer">Jon Barron's website</a>.</p>
     </footer>
   </main>

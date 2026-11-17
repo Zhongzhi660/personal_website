@@ -423,6 +423,45 @@ a.news-arxiv-link:hover {
   color: #f09228;
 }
 
+/* Research Impact */
+.impact-intro {
+  margin-bottom: 10px;
+}
+
+.impact-block {
+  margin: 0 0 14px 0;
+}
+
+.impact-title {
+  margin: 0 0 2px 0;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.impact-title .news-badge {
+  margin-left: 6px;
+  font-weight: 600;
+}
+
+.impact-paper-links {
+  margin-left: 6px;
+  font-size: 13px;
+  font-weight: 400;
+  color: #666;
+}
+
+.impact-list {
+  margin: 0;
+  padding-left: 20px;
+  font-size: 14px;
+  line-height: 1.65;
+  color: #333;
+}
+
+.impact-list li {
+  margin-bottom: 3px;
+}
+
 /* Media Coverage (last section): Source: "Title" with Title as link */
 .media-coverage-list {
   list-style: none;
