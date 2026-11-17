@@ -424,22 +424,28 @@ a.news-arxiv-link:hover {
 }
 
 /* Research Impact */
-.impact-intro {
-  margin-bottom: 10px;
+.impact-orgs {
+  margin: 0 0 18px 0;
+  font-size: 13.5px;
+  line-height: 1.7;
+  color: #444;
+}
+
+.impact-orgs-label {
+  font-weight: 600;
+  color: #222;
+  margin-right: 4px;
 }
 
 .impact-block {
-  margin: 0 0 14px 0;
+  margin: 0 0 16px 0;
+  padding-left: 12px;
+  border-left: 3px solid #d6e4f5;
 }
 
 .impact-title {
-  margin: 0 0 2px 0;
-  font-size: 15px;
-  font-weight: 600;
-}
-
-.impact-title .news-badge {
-  margin-left: 6px;
+  margin: 0 0 3px 0;
+  font-size: 15.5px;
   font-weight: 600;
 }
 
@@ -450,16 +456,29 @@ a.news-arxiv-link:hover {
   color: #666;
 }
 
+.impact-headline {
+  margin: 0 0 4px 0;
+  font-size: 14.5px;
+  line-height: 1.65;
+  color: #222;
+}
+
 .impact-list {
   margin: 0;
-  padding-left: 20px;
-  font-size: 14px;
+  padding-left: 18px;
+  font-size: 13.5px;
   line-height: 1.65;
-  color: #333;
+  color: #444;
 }
 
 .impact-list li {
-  margin-bottom: 3px;
+  margin-bottom: 2px;
+}
+
+.container > p.impact-note {
+  margin: -4px 0 0 0;
+  font-size: 12.5px;
+  color: #888;
 }
 
 /* Media Coverage (last section): Source: "Title" with Title as link */
